@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/scripts/whatever.js"],"sourcesContent":["console.log('work');\n"],"names":[],"mappings":"ssBAAA,QAAQ,IAAI,MAAM"}
