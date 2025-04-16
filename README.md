@@ -1,20 +1,12 @@
-►  Second command project  ◄
+Second command project
 
-Tech Stack:
-► HTML
-► CSS
-► Java Script
+Tech Stack: ► HTML ► CSS ► Java Script
 
-Collaboration : 
+Collaboration :
 
-► Go IT Team
+• Go IT Team
 
 Our Team:
 
-► Victor Harasymiv (Team Lead)
-► Vitaliy Obukh
-► VitalinaS
-► Yelyzaveta
-► Yelyzaveta Musianovych
-► Iryna Ozerova
-► Тetiana Bystrova
+• Victor Harasymiv (Team Lead) • Vitaliy Obukh • VitalinaS • Yelyzaveta •
+Yelyzaveta Musianovych • Iryna Ozerova • Тetiana Bystrova
