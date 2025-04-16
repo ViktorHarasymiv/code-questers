@@ -1,0 +1,16 @@
+; git branch header - створює гілку;
+; git branch - перевірка списку гілок які знаходяться на компютері;
+; git checkout - b header - перехід в гілку хедер;
+; git status - перевірка статусу;
+; git add . - зберегти зміни в усіх файлах;
+; git add index.html - збереження окремого файла;
+; git reset - відміна попередньої загрузки;
+; git commit -m "опис змін" - збереження і підпис змін;
+; git push --set-upstream origin header - пуш створеної гілки (робиться лише один раз при першому пуші, далі git push);
+
+; git pull - отримуємо остані зміни з github;
+; git merge 'brancName';
+; git merge --abort - відміна зливання;
+; git branch --d branchName - видаляємо гілку локальну з проекту;
+; git push origin --delete "branchName - видаляємо гілку з github;
+; git log - історія комітів (q - вихід з режиму перегляду);
