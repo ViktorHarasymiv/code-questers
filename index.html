@@ -2,54 +2,124 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png+xml" href="/code-questers/favicon.png" />
+    <link rel="icon" type="image/png+xml" href="/code-questers/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code-Questers</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>LloydJefferson.</title>
     <script type="module" crossorigin src="/code-questers/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/code-questers/assets/index-VBhJhLKP.css">
+    <link rel="stylesheet" crossorigin href="/code-questers/assets/index-C8bit_UA.css">
   </head>
-  <body>
+  <body id="to_top-scroll">
+    <!-- preloader  
+    ================================================== -->
+    <div id="preloader">
+      <div id="loader" class="dots-fade">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
     <header class="header">
-  <div class="container">Header</div>
+  <div class="container">
+    <!-- THEME -->
+    <label id="switch" class="switch">
+      <input id="slider" type="checkbox" data-js-theme-switcher />
+      <span class="slider round"></span>
+    </label>
+    <a href="#benefits ">Benefits </a>
+    <a href="#FAQ">FAQ</a>
+  </div>
 </header>
 
 
-    <main>
+ 
       <!-- Loads the specified .html file -->
-      <section id="hero" class="hero_section section" class="container">
-  <div class="container">Hero</div>
+
+      <!-- PAGES -->
+      <section id="hero" class="hero section">
+  <div class="container">
+    <h1 class="title_section">
+      Hello, I am
+      <p class="accent">FullStack Developer</p>
+    </h1>
+  </div>
+  <div class="hero_link--list"></div>
 </section>
 
-      <section id="hero" class="hero_section section" class="container">
-  <div class="container">Empty section</div>
+      <section id="about" class="about section">
+  <div class="container">
+    <h2 class="title_section">About <span class="accent">Me</span></h2>
+  </div>
+</section>
+
+      <section id="projects" class="projects section">
+  <div class="container">
+    <h2 class="title_section text-center">
+      My <span class="accent">Projects</span>
+    </h2>
+  </div>
+</section>
+
+      <section id="benefits" class="benefits section">
+  <div class="container">
+    <h2 class="title_section">
+      <span class="accent">Benefits</span> of
+      <span class="text_width-config"
+        >working with <span class="text_width-config">me</span></span
+      >
+    </h2>
+  </div>
+</section>
+
+      <section id="FAQ" class="FAQ section">
+  <div class="container">
+    <h2 class="title_section">
+      <span class="text_width-config accent">question</span>
+      <span class="text_width-config">frequently</span>
+      <span class="text_width-config">asked</span>
+    </h2>
+  </div>
+</section>
+
+      <section id="reviews" class="reviews section">
+  <div class="container">
+    <h2 class="title_section text-center">reviews</h2>
+  </div>
+</section>
+
+      <section id="contact" class="contact section">
+  <div class="container">
+    <h2 class="title_section">
+      <span>Let's</span>
+      <span class="accent">work</span>
+      <span class="accent text_width-config">together</span>
+    </h2>
+  </div>
 </section>
 
     </main>
 
     <footer class="footer">
-  <div class="container">
-    Footer
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        padding-bottom: 20px;
-      "
-    >
-      <img src="./favicon.png" alt="" />
-      <h3>Code-Questers</h3>
-    </div>
-  </div>
+  <div class="container">Footer</div>
 </footer>
+
+    <div class="footer__to-top-box">
+  <a href="#to_top-scroll" class="button__to-top">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="10"
+      height="10"
+      viewBox="0 0 24 24"
+      style="fill: rgba(255, 255, 255, 1)"
+      class="footer--to_top_ico"
+    >
+      <path
+        d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
+      ></path>
+    </svg>
+  </a>
+  <span>BACK TO TOP</span>
+</div>
 
 
   </body>
