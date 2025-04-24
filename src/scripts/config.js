@@ -6,9 +6,9 @@ const laptop = 164 / 2;
 const tablet = 124 / 2;
 const mobile = 80 / 2;
 
-window.addEventListener('resize', () => {
-  let screenWidth = window.innerWidth;
+let screenWidth = window.innerWidth;
 
+function setInitialStyles() {
   sections_collection.slice(1, -1).forEach(section => {
     if (screenWidth < 768) {
       section.style.marginBottom = mobile + 'px';
@@ -21,6 +21,15 @@ window.addEventListener('resize', () => {
       section.style.marginTop = laptop + 'px';
     }
   });
+}
+
+// Встановлення стилів при першому рендері
+setInitialStyles();
+
+// Додання слухача для зміни розміру
+window.addEventListener('resize', () => {
+  screenWidth = window.innerWidth;
+  setInitialStyles();
 });
 
 // TO TOP BUTTON
