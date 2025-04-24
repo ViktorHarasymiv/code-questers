@@ -1,0 +1,85 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  box-sizing: border-box;
+  cursor: pointer;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--light-accent);
+
+  border-color: transparent;
+  border-radius: 16px;
+
+  transition-duration: var(--T-D);
+
+  /* BIG BUTTON */
+
+  /* width: clamp(10.313rem, 10.435vw + 7.965rem, 16.313rem);
+  height: clamp(5.75rem, 0.435vw + 5.652rem, 6rem); */
+
+  /* SMALL BYTTON */
+
+  width: 173px;
+  height: 48px;
+
+  /* 20PX */
+  font-size: clamp(1.125rem, 1.0761rem + 0.2174vw, 1.25rem);
+
+  /* 16PX */
+  font-size: 1em;
+  font-weight: var(--medium);
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white);
+}
+
+button:hover {
+  background: var(--accet-green);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

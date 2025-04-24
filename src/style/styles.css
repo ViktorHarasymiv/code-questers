@@ -1,0 +1,30 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./Setup/reset.css');
+@import url('./Setup/root.css');
+@import url('./Setup/scroll.css');
+@import url('./Setup/toTop.css');
+
+@import url('./Setup/fonts.css');
+@import url('./Setup/typograph.css');
+
+@import url('./Setup/base.css');
+@import url('./Setup/container.css');
+
+@import url('./Setup/preloader.css');
+@import url('./Setup/theme.css');
+
+/* Animation */
+
+@import url('./Setup/hover.css');
+
+@import url('./Setup/switcher.css');
+
+/* Sections style */
+@import url('./header.css');
+@import url('./footer.css');

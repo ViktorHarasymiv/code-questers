@@ -1,0 +1,117 @@
+/* Desktop-Tablet */
+
+body {
+  font-family: var(--poppins-font);
+  font-weight: var(--poppins-light);
+
+  font-size: var(--font-size);
+  letter-spacing: 0.2px;
+  line-height: normal;
+}
+
+/* H1 */
+
+h1 {
+  font-family: var(--impact-font);
+  font-size: 136px;
+  letter-spacing: 1.8px;
+  line-height: 156px;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767.98px) {
+  h1 {
+    font-size: 64px;
+    line-height: 80px;
+  }
+}
+
+/* H2 */
+h2 {
+  font-family: var(--impact-font);
+  font-size: 108px;
+  letter-spacing: 1.8px;
+  line-height: 124px;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767.98px) {
+  h2 {
+    font-size: 52px;
+    line-height: 64px;
+  }
+}
+
+/* H3 */
+
+h3 {
+  font-family: var(--poppins-font);
+  font-weight: var(--poppins-medium);
+  font-size: 36px;
+  letter-spacing: 0.5px;
+  line-height: 48px;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767.98px) {
+  h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+/* ACCENT */
+
+.accent {
+  color: var(--accet-green);
+}
+
+.caption {
+  font-weight: var(--poppins-regular);
+  font-size: clamp(1.125rem, 1.0761rem + 0.2174vw, 1.25rem);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 32px;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767.98px) {
+  .caption {
+    line-height: 28px;
+  }
+}
+
+/* A */
+
+a {
+  font-weight: var(--light);
+  font-size: 1em;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+
+  transition-duration: var(--T-D);
+}
+
+a:hover {
+  color: var(--accet-green);
+}
+
+.title_section {
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .text_width-config {
+    display: inline-block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+/* Для всього документа */
+::-webkit-scrollbar {
+  width: 9px; /* Ширина вертикального скролла */
+  height: 9px; /* Висота горизонтального скролла */
+}
+
+/* Смуга прокрутки (фоновий трек) */
+::-webkit-scrollbar-track {
+  background: var(--light-grey); /* Колір треку */
+}
+
+/* Ручка прокрутки */
+::-webkit-scrollbar-thumb {
+  background: var(--hover-green); /* Колір ручки */
+}
+
+/* При наведенні мишкою */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-green); /* Зміна кольору при hover */
+}

@@ -1,0 +1,26 @@
+/* SETUP */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+main {
+  flex-grow: 1;
+}
+
+.icon {
+  width: 24px;
+  aspect-ratio: 1;
+}

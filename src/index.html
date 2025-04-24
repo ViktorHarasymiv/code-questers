@@ -2,28 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png+xml" href="/favicon.png" />
+    <link rel="icon" type="image/png+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code-Questers</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>LloydJefferson.</title>
+    <link rel="stylesheet" href="./style/styles.css" />
   </head>
-  <body>
+  <body id="to_top-scroll">
+    <!-- preloader  
+    ================================================== -->
+    <div id="preloader">
+      <div id="loader" class="dots-fade">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
     <load src="./partials/header.html" />
 
-    <main>
+ 
       <!-- Loads the specified .html file -->
+
+      <!-- PAGES -->
       <load src="./partials/hero.html" />
-      <load src="./partials/section.html" />
+      <load src="./partials/about.html" />
+      <load src="./partials/projects.html" />
+      <load src="./partials/benefits.html" />
+      <load src="./partials/FAQ.html" />
+      <load src="./partials/reviews.html" />
+      <load src="./partials/contact.html" />
     </main>
 
     <load src="./partials/footer.html" />
+    <load src="./partials/toTop.html" />
 
     <script type="module" src="./main.js"></script>
   </body>

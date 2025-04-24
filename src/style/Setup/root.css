@@ -1,0 +1,47 @@
+/* LIGHT THEME */
+
+:root {
+  --dark: #292929;
+  --light-grey: #e4e5e6;
+  --hover-grey: #bbbbbb;
+  --white: #f0f0f0;
+
+  --light-accent: #bcdfd1;
+  --accet-green: #00b068;
+  --hover-green: #009156;
+
+  --error: #e74a3b;
+}
+
+/* DARK THEME */
+
+:root {
+  --dark-DT: #1e2023;
+  --charcoal-DT: #2a2d32;
+  --hover-charcoal-DT: #3b3f45;
+
+  --dark-accet-DT: #204136;
+  --accet-green-DT: #14c57c;
+}
+
+/* FONT */
+
+:root {
+  --poppins-font: 'Poppins', sans-serif;
+  --impact-font: 'Impact', sans-serif;
+
+  --poppins-font-family: 'Poppins', sans-serif;
+
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semiBold: 600;
+
+  --font-size: 1em;
+}
+
+/* ANIMATION */
+
+:root {
+  --T-D: 0.2s;
+}
