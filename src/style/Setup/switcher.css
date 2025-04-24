@@ -33,7 +33,7 @@
   top: 0;
   bottom: 0;
   margin: auto 0;
-  background: url('./../image/icons/theme.svg');
+  background: url('/image/icons/theme.svg');
   background-repeat: no-repeat;
   background-position: 100%;
 
@@ -48,7 +48,7 @@ input:checked + .slider:before {
   width: 14px;
   height: 20px;
 
-  background: url('./../image/icons/theme-active.svg') 100%;
+  background: url('/image/icons/theme-active.svg') 100%;
 
   transform: translateX(28px);
 }
