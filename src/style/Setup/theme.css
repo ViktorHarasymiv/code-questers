@@ -1,0 +1,46 @@
+.is-dark-theme body {
+  background-color: var(--dark-DT);
+  color: var(--white);
+}
+
+.is-dark-theme .accent {
+  color: var(--accet-green-DT);
+}
+
+.is-dark-theme #preloader {
+  background-color: var(--dark-DT);
+}
+
+.is-dark-theme a {
+  color: var(--white);
+}
+
+.is-dark-theme a:hover {
+  color: var(--accet-green-DT);
+}
+
+.is-dark-theme button {
+  background-color: var(--accet-green-DT);
+}
+
+.is-dark-theme button:hover {
+  background-color: var(--dark-accet-DT);
+}
+
+.is-dark-theme .button__to-top {
+  border-color: var(--accet-green);
+}
+
+.is-dark-theme .footer--to_top_ico {
+  fill: var(--accet-green) !important;
+}
+
+.is-dark-theme .footer__to-top-box > span {
+  color: var(--accet-green);
+}
+
+.is-dark-theme {
+}
+
+.is-dark-theme {
+}
