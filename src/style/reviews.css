@@ -1,6 +1,5 @@
 .swiper {
     width: 100%;
-    height: fit-content;
     height: 296px;
     margin: 0 auto;
 }
@@ -12,18 +11,49 @@
     padding: 0;
     height: fit-content;
   }
-  
+
   li.swiper-slide {
-    height: fit-content;
-    box-sizing: border-box;
-    border-radius: 16px;
-    background-color: #E4E5E6;
-    padding: 32px;
-    margin-bottom: 72px;
+    width: 592px !important;
+    height: 224px !important;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 1280px) {
+    li.swiper-slide {
+      width: 100% !important;
+    }
   }
   
-  .review {
-    margin-bottom: 24px;
+  @media screen and (max-width: 768px) {
+    .swiper {
+      height: 365px !important;
+    }
+    
+    li.swiper-slide {
+      height: 296px !important;
+    }
+  }
+  
+  .swiper-wrapper {
+    position: relative;
+  
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+  }
+  
+  .swiper-slide {
+    padding: 32px;
+    box-sizing: border-box;
+  
+    border-radius: 16px;
+  
+    background-color: #e4e5e6;
   }
   
   .reviewer {
@@ -34,30 +64,56 @@
   .review-image {
     border-radius: 24px;
   }
-
+  
   .autor-name {
     margin-top: 8px;
     margin-bottom: 8px;
   }
   
-div.swiper-button-prev,
-div.swiper-button-next {
-  position: absolute;
-  display: block;
-  bottom: 0;
-  top: auto;
-  z-index: 10;
-  width: 27px;
-  height: 44px;
-  border: 1px solid #292929;
-  border-radius: 8px;
-  padding: 12px;
-}
-
-div.swiper-button-prev {
-  right: 56px;
-}
-
-div.swiper-button-next {
-  right: 0;
-}
+  .swiper-button-prev,
+  .swiper-button-next {
+    box-sizing: border-box !important;
+    position: absolute;
+  
+    display: block;
+  
+    top: auto !important;
+    bottom: 0 !important;
+  
+    z-index: 10;
+  
+    width: 48px !important;
+    height: 48px !important;
+  
+    border: 1px solid var(--dark) !important;
+    border-radius: 8px;
+  }
+  
+  .swiper-button-prev {
+    left: auto !important;
+    right: 80px !important;
+  }
+  
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    content: ' ' !important;
+    font-family: none !important;
+    font-size: 1em !important;
+  
+    background-image: url('/image/icons/arrow-right.svg  ');
+  
+    width: 24px !important;
+    height: 24px !important;
+  }
+  
+  .swiper-button-next:after {
+    background-image: url('/image/icons/arrow-left.svg  ');
+  }
+  
+  @media screen and (max-width: 768px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 40px !important;
+      height: 40px !important;
+    }
+  }

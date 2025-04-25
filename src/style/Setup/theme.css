@@ -44,3 +44,16 @@
 
 .is-dark-theme {
 }
+
+/* REVIEWS */
+.is-dark-theme li.swiper-slide {
+  background-color: var(--charcoal-DT);
+}
+.is-dark-theme .swiper-button-prev,
+.is-dark-theme .swiper-button-next {
+  border-color: var(--white) !important;
+}
+.is-dark-theme .swiper-button-prev:after,
+.is-dark-theme .swiper-button-next:after {
+  filter: hue-rotate(180deg) saturate(1) brightness(50);
+}

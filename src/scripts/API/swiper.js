@@ -13,8 +13,11 @@ export function initSwiper() {
     slidesPerView: 1, 
     spaceBetween: 32, 
     breakpoints: {
+      1280: {
+        slidesPerView: 2,
+      },
         768: {          
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
     },
 });
