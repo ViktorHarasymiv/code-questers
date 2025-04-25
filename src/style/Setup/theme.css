@@ -44,3 +44,11 @@
 
 .is-dark-theme {
 }
+
+/* HERO */
+
+.is-dark-theme .button_text {}
+
+.is-dark-theme .hero_navigation {
+  background-color: var(--charcoal-DT);
+}
