@@ -56,12 +56,11 @@ button {
   line-height: 160%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: var(--white);
 }
 
 button:hover {
-  background: var(--accet-green);
+  background-color: var(--accet-green);
+  transition-duration: var(--T-D);
 }
 
 img {

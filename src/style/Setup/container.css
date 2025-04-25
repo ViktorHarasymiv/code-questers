@@ -17,6 +17,9 @@
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
   .container {
-    max-width: 1280px;
+    max-width: 1216px;
+
+    display: flex;
+    flex-direction: column;
   }
 }

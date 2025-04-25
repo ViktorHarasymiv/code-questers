@@ -1,11 +1,84 @@
 <header class="header">
-  <div class="container">
-    <!-- THEME -->
-    <label id="switch" class="switch">
-      <input id="slider" type="checkbox" data-js-theme-switcher />
-      <span class="slider round"></span>
-    </label>
-    <a href="#benefits ">Benefits </a>
-    <a href="#FAQ">FAQ</a>
+  <div class="container header-container">
+    <div class="header-wrap">
+      <a class="header-logo" href="./index.html"
+        >Lloyd<span class="highlit">Jefferson.</span>
+      </a>
+      <!-- THEME -->
+      <div class="icon-container">
+        <div class="switch-container">
+          <label id="switch" class="switch">
+            <input id="slider" type="checkbox" data-js-theme-switcher />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <nav class="header-navigation">
+        <ul class="header-list list">
+          <li class="header-item">
+            <a class="header-link" href="#about">About me</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#projects">Projects</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#contact">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <button class="header-mobile-menu-open js-open-menu" aria-label="Open menu">
+      <svg class="burger-btn-menu" width="32" height="32">
+        <use href="/image/icons/sprite/icons.svg#burger-btn"></use>
+      </svg>
+    </button>
   </div>
 </header>
+
+<!-- Mobile menu -->
+<div class="header-mobile-menu-container js-menu-container" id="mobile-menu">
+  <div class="header-mobile-menu">
+    <div class="container mob-menu-top-bottom">
+      <div class="mob-menu-top">
+        <div class="header-logo-container">
+          <a class="header-logo header-mobile-logo" href="#top"
+            >Lloyd<span class="highlit">Jefferson.</span>
+          </a>
+        </div>
+        <div class="switch-mobile">
+          <label id="switch" class="switch">
+            <input
+              id="slider-moblie"
+              type="checkbox"
+              data-js-theme-switcher-mobile
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <button
+          class="header-mobile-menu-close js-close-menu"
+          aria-label="Close menu"
+        >
+          <svg width="32" height="32" class="menu-close-icon">
+            <use href="/image/icons/sprite/icons.svg#close-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="header-nav-menu-wrap">
+        <nav class="header-mobile-navigation">
+          <ul class="header-mobile-list">
+            <li class="header-mobile-item">
+              <a class="header-mobile-link" href="#about">About me</a>
+            </li>
+            <li class="header-mobile-item">
+              <a class="header-mobile-link" href="#projects">Projects</a>
+            </li>
+            <li class="header-mobile-item">
+              <a class="header-mobile-link" href="#contact">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
