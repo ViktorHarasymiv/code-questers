@@ -1,0 +1,63 @@
+.swiper {
+    width: 100%;
+    height: fit-content;
+    height: 296px;
+    margin: 0 auto;
+}
+
+.swiper-wrapper {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+  }
+  
+  li.swiper-slide {
+    height: fit-content;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: #E4E5E6;
+    padding: 32px;
+    margin-bottom: 72px;
+  }
+  
+  .review {
+    margin-bottom: 24px;
+  }
+  
+  .reviewer {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .review-image {
+    border-radius: 24px;
+  }
+
+  .autor-name {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+div.swiper-button-prev,
+div.swiper-button-next {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  top: auto;
+  z-index: 10;
+  width: 27px;
+  height: 44px;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+div.swiper-button-prev {
+  right: 56px;
+}
+
+div.swiper-button-next {
+  right: 0;
+}
