@@ -56,11 +56,10 @@ button {
   line-height: 160%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-
 }
 
 button:hover {
+  background-color: var(--accet-green);
   transition-duration: var(--T-D);
 }
 
