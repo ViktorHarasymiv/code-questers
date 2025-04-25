@@ -4,22 +4,21 @@
   justify-content: space-between;
 }
 
-a.header-logo {
+.header-logo {
   display: flex;
-  font-family: 'Impact', sans-serif;
-  font-weight: 400;
+  font-family: var(--impact-font);
   font-size: 24px;
   line-height: 1;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 20px 0;
-  color: var(--main-text-color);
+
+  flex-grow: 1;
 }
 
-a.header-mobile-logo {
+.header-mobile-logo {
   display: flex;
-  font-family: 'Impact', sans-serif;
-  font-weight: 400;
+  font-family: var(--impact-font);
   font-size: 24px;
   line-height: 1;
   letter-spacing: 0.06em;
@@ -29,15 +28,15 @@ a.header-mobile-logo {
 }
 
 .header-wrap {
+  width: 100%;
   display: flex;
-  gap: 40px;
+  justify-content: stretch;
   align-items: center;
 }
 
 .icon-container {
+  margin-right: 44px;
   position: relative;
-  margin: auto;
-  padding: 20px 0;
 }
 
 .switch-container {
@@ -72,7 +71,7 @@ a.header-mobile-logo {
   cursor: pointer;
   background: none;
   border: none;
-  fill: var(--main-text-color);
+  fill: var(--dark-DT);
 }
 
 /* -------------------------------- */
@@ -85,27 +84,12 @@ a.header-mobile-logo {
   }
 
   .header-logo {
-    font-family: 'Impact', sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     padding: 32px 0;
-  }
-
-  .header-wrap {
-    display: flex;
-    gap: 40px;
-    margin-left: auto;
+    font-size: 32px;
   }
 
   .switch-container {
     display: flex;
-  }
-
-  .icon-container {
-    padding: 36px 0;
   }
 
   .header-mobile-menu-open {
@@ -114,7 +98,6 @@ a.header-mobile-logo {
 
   .header-navigation {
     display: flex;
-    margin-right: auto;
   }
 
   .header-list {
@@ -166,7 +149,7 @@ a.header-mobile-logo {
   height: 100%;
   background-color: #f0f0f0;
   display: flex;
-  display: none;
+  /* display: none; */
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -182,6 +165,7 @@ a.header-mobile-logo {
 }
 
 /* Відображаємо модалку */
+
 .header-mobile-menu-container.active {
   display: flex;
   transform: translateX(0);
@@ -238,6 +222,7 @@ a.header-mobile-logo {
   background-image: url(../image/background/decor-mobil-menu@1x-mob.png);
   background-repeat: no-repeat;
 }
+
 @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-rezolution: 2dppx),
   (min-rezolution: 192dpi) {
@@ -296,6 +281,18 @@ a.header-mobile-logo {
 .header-mobile-link:hover,
 .header-mobile-link:focus {
   color: #00b068;
+}
+
+.switch-mobile {
+  position: absolute;
+
+  bottom: 50px;
+  right: 10px;
+
+  transform: rotate(90deg);
+
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 body.no-scroll {
