@@ -61,7 +61,7 @@ button {
 }
 
 button:hover {
-  background: var(--accet-green);
+  transition-duration: var(--T-D);
 }
 
 img {
