@@ -8,8 +8,8 @@
     position: absolute;
     content: '';
 
-    top: 0;
-    right: 0;
+    top: 4px;
+    right: 4px;
     max-width: 356px;
     max-height: 276px;
 
@@ -23,6 +23,8 @@
 }
 
 .hero_overlay::before {
+    left: 145px;
+    bottom: -40px;
     z-index: -1;
     position: absolute;
     content: '';
@@ -38,6 +40,7 @@
 
     background-image: url('../image/background/decor_hero_button.png');
     background-repeat: no-repeat;
+    
 
     filter: blur(3px);
 }
@@ -56,8 +59,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex: 1 1 50%;
+    
 }
 
 .hero_about-wrapper {
@@ -94,6 +97,7 @@
 .hero_button {
     width: 261px;
     height: 96px;
+    
 }
 
 .transform_text {
@@ -110,8 +114,14 @@
     transition-duration: var(--T-D);
 }
 
+.hero_button:hover {
+    background-color: var(--hover-green);
+}
+
 .hero_button:hover .transform_text {
     transform: translateX(0px);
+    
+    
 }
 
 .button_text {
@@ -153,10 +163,14 @@
         margin-left: 150px;
         justify-content: stretch;
         flex: 1 1 100%;
+        
+        
     }
 
     .hero_button {
         margin-bottom: 40px;
+        
+        
     }
 }
 
@@ -168,6 +182,7 @@
     .hero_button--wrapper {
         margin-left: 0;
         justify-content: end;
+        
     }
 
     .hero_button {
@@ -175,6 +190,7 @@
 
         width: 165px;
     }
+    
 
     .hero_navigation {
         height: 100%;
@@ -202,5 +218,6 @@
         left: 150px;
         bottom: -40px;
         background-image: url('../image/background/hero_decor_button_mobile.png');
+        
         }
 }
