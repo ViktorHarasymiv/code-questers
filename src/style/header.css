@@ -102,6 +102,10 @@
   border-radius: 8px;
 }
 
+.header-mobile-menu-open:hover {
+  background-color: transparent !important;
+}
+
 .burger-btn-menu {
   display: flex;
   align-items: center;
