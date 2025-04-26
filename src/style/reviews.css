@@ -27,19 +27,37 @@ li.swiper-slide {
   background-color: #e4e5e6;
 }
 
+.review {
+  max-height: 100px;
+  overflow: auto;
+}
+
+.review::-webkit-scrollbar {
+  display: none;
+}
+
 @media screen and (max-width: 1280px) {
-    li.swiper-slide {
+  li.swiper-slide {
       width: 100% !important;
+      height: 224px !important;
+    }
+    
+    .swiper {
+      height: 288px !important;
     }
 }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     .swiper {
-      height: 365px !important;
+      height: 360px !important;
     }
 
     li.swiper-slide {
       height: 296px !important;
+    }
+
+    .review {
+      max-height: 168px;
     }
   }
  
@@ -97,7 +115,7 @@ li.swiper-slide {
     background-image: url('/image/icons/arrow-left.svg  ');
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     .swiper-button-prev,
     .swiper-button-next {
       width: 40px !important;
