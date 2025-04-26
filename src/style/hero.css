@@ -1,3 +1,18 @@
+.hero {
+  padding-bottom: 82px;
+}
+
+@media screen and (max-width: 1280px) {
+  .hero {
+    padding-bottom: 62px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-bottom: 40px;
+  }
+}
+
 .hero_overlay {
   padding-block: 168px 120px;
   position: relative;
@@ -91,11 +106,6 @@
   height: 96px;
 }
 
-.hero_button:hover .hero_icon {
-  stroke-width: 4px;
-  stroke: var(--white);
-}
-
 .transform_text {
   pointer-events: none;
   display: inline-flex;
@@ -111,7 +121,7 @@
 }
 
 .hero_button:hover .transform_text {
-  transform: translateX(0px);
+  transform: translateX(-45px);
 }
 
 .button_text {
@@ -120,6 +130,8 @@
   letter-spacing: 0.03em;
 
   text-transform: uppercase;
+
+  color: var(--dark-DT);
 }
 
 /* NAVIGATION */
@@ -189,6 +201,10 @@
   .hero_nav--list {
     width: 100%;
     flex-wrap: wrap;
+  }
+
+  .hero_nav--item {
+    width: 100%;
   }
 
   .hero_nav--list a {

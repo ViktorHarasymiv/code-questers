@@ -39,12 +39,6 @@
   color: var(--accet-green);
 }
 
-.is-dark-theme {
-}
-
-.is-dark-theme {
-}
-
 /* HEADER */
 
 .is-dark-theme .header-mobile-menu-open,
@@ -78,12 +72,22 @@
   stroke: var(--white);
 }
 
+.is-dark-theme .sticky {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 420px) {
+  .is-dark-theme .sticky {
+    background-color: var(--dark-DT);
+  }
+}
+
 /* HERO */
 
 .is-dark-theme .hero_navigation {
   background-color: var(--charcoal-DT);
 }
 
-.is-dark-theme button {
-  color: var(--white);
+.is-dark-theme .button_text {
+  color: var(--white) !important;
 }
