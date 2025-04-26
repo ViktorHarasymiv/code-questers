@@ -24,7 +24,7 @@
 }
 
 .is-dark-theme button:hover {
-  background-color: var(--dark-accet-DT);
+  background-color: var(--hover-green);
 }
 
 .is-dark-theme .button__to-top {
@@ -57,4 +57,57 @@
 
 .is-dark-theme .projects-item-link:hover {
   background: var(--hover-charcoal-DT);
+}
+
+/* HEADER */
+
+.is-dark-theme .header-mobile-menu-open,
+.is-dark-theme .header-mobile-menu-close,
+.is-dark-theme .header-mobile-menu-open:hover,
+.is-dark-theme .header-mobile-menu-close {
+  background-color: transparent !important;
+}
+
+.is-dark-theme .header-mobile-link {
+  color: var(--dark-DT) !important;
+}
+
+.is-dark-theme .burger-btn-menu {
+  fill: var(--white);
+}
+
+.is-dark-theme .header-mobile-menu {
+  background-color: var(--dark-DT);
+}
+
+.is-dark-theme .header-logo {
+  color: var(--white);
+}
+
+.is-dark-theme .header-mobile-link {
+  color: var(--white) !important;
+}
+
+.is-dark-theme .menu-close-icon {
+  stroke: var(--white);
+}
+
+.is-dark-theme .sticky {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 420px) {
+  .is-dark-theme .sticky {
+    background-color: var(--dark-DT);
+  }
+}
+
+/* HERO */
+
+.is-dark-theme .hero_navigation {
+  background-color: var(--charcoal-DT);
+}
+
+.is-dark-theme .button_text {
+  color: var(--white) !important;
 }
