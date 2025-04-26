@@ -93,6 +93,7 @@
 
 .projects-btn:hover {
   color: var(--accet-green-DT);
+  background-color: transparent;
 }
 
 .visible {
