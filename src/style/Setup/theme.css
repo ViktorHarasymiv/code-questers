@@ -112,7 +112,26 @@
   color: var(--white) !important;
 }
 
+/* FAQ */
+
+.is-dark-theme .ac.is-active {
+  background-color: var(--dark-accet-DT) !important;
+}
+
+.is-dark-theme .ac .ac-trigger {
+  color: var(--white) !important;
+}
+
+.is-dark-theme .ac-text {
+  color: var(--white) !important;
+}
+
+.is-dark-theme .ac .ac-trigger::after {
+  filter: hue-rotate(180deg) saturate(2) brightness(5);
+}
+
 /* REVIEWS */
+
 .is-dark-theme li.swiper-slide {
   background-color: var(--charcoal-DT);
 }

@@ -1,0 +1,60 @@
+.background_wrapper {
+    align-self: flex-end;
+
+    flex: 0 0 50%;
+}
+
+.accordion_wrapper {
+    height: 760px;
+
+    display: flex;
+    justify-content: space-between;
+
+    flex-grow: 1;
+
+    transform: translateY(-100px);
+}
+
+.accordion_background {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    max-width: 526px;
+    width: 100%;
+    max-height: 408px;
+    height: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+    .background_wrapper {
+        display: none;
+    }
+
+    .accordion-container {
+        width: 100%;
+    }
+
+    .accordion_wrapper {
+        height: 100%;
+
+        justify-content: stretch;
+        transform: translateY(0px);
+    }
+
+    .FAQ .cancel_margin {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .FAQ .cancel_margin {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+
