@@ -7,7 +7,7 @@ import './scripts/mobile-menu.js';
 
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
-
 new Accordion('.accordion-container');
 
 import './scripts/API/main-api.js';
+
