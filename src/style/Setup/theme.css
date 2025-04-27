@@ -143,3 +143,9 @@
 .is-dark-theme .swiper-button-next:after {
   filter: hue-rotate(180deg) saturate(1) brightness(50);
 }
+
+/* BENEFITS */
+
+.is-dark-theme .benefits_icon {
+  background-color: var(--dark-accet-DT);
+}
