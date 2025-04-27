@@ -15,7 +15,6 @@ EMAIL.addEventListener('input', () => {
     if (validateEmail(email) === false) {
         EMAIL.classList.add('error');
         EMAIL.classList.remove('done');
-
         LABEL.classList.remove('success');
     } else {
         EMAIL.classList.add('done');
@@ -33,10 +32,13 @@ FORM.addEventListener('submit', async event => {
     event.preventDefault();
     const DATA = {
         email: FORM.elements.email.value,
+        comment: FORM.elements.message.value.trim(),
     };
     try {
         const result = await requestsPost(DATA, FORM);
-    } catch (error) { }
+    } catch (error) {
+        console.error('Помилка при надсиланні форми:', error);
+    }
 });
 
 

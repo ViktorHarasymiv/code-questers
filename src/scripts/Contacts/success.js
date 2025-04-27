@@ -3,6 +3,7 @@ import close_icon from '../../image/icons/close.svg';
 const page = document.querySelector('body');
 
 export const Modal = result => {
+    console.log('MODAL FUNCTION CALLED:', result);
      const markUp = `
         <div class="overlay">
             <div class='success_modal text-center'>
@@ -16,6 +17,7 @@ export const Modal = result => {
     `;
     page.insertAdjacentHTML('beforeend', markUp);
     const close = document.querySelector('.close_button');
+     const modal = document.querySelector('.success_modal');
     const overlay = document.querySelector('.overlay');
     
     close.addEventListener('click', () => {
