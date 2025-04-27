@@ -15,7 +15,7 @@
 
 .projects-item-img {
   width: 100%;
-  border-radius: 16px;
+  border-radius: 20px;
   margin-bottom: 12px;
   object-fit: cover;
 }
@@ -126,8 +126,10 @@
 
 @media screen and (min-width: 1280px) {
   .projects-list {
-    max-width: 1008px;
     margin: 0 auto;
+    max-width: 1008px;
+    width: 100%;
+
     gap: 80px;
   }
   .projects .title_section {

@@ -49,8 +49,6 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 20px 0;
-
-  flex-grow: 1;
 }
 
 .header-mobile-logo {
@@ -67,7 +65,7 @@
 .header-wrap {
   width: 100%;
   display: flex;
-  justify-content: stretch;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -78,6 +76,11 @@
 
 .switch-container {
   display: none;
+}
+
+.navigation_wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .header-navigation {
