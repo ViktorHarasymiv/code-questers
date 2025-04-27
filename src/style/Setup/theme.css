@@ -44,6 +44,7 @@
 .is-dark-theme .projects-btn {
   background: transparent;
   color: var(--white);
+  border-bottom: 2px solid var(--accet-green-DT);
 }
 
 .is-dark-theme .projects-btn:hover,

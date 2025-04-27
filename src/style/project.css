@@ -64,26 +64,24 @@
 }
 
 .projects-btn {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
+  width: 100%;
+  max-width: 117px;
 
   font-family: var(--poppins-font);
   font-weight: var(--regular);
   font-size: 18px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--dark-DT);
-  background-color: transparent;
   border: none;
   border-radius: 0;
-  border-bottom: 2px solid var(--accet-green-DT);
+  border-bottom: 2px solid var(--accet-green);
 
   transition: var(--T-D);
 }
 
 .projects-btn:hover {
-  color: var(--accet-green-DT);
+  color: var(--accet-green);
   background-color: transparent;
 }
 
@@ -127,6 +125,7 @@
 @media screen and (min-width: 1280px) {
   .projects-list {
     margin: 0 auto;
+    margin-bottom: 80px;
     max-width: 1008px;
     width: 100%;
 
