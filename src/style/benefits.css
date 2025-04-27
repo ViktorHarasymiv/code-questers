@@ -1,0 +1,128 @@
+/* Benefits */
+
+.benefits_title {
+  margin-bottom: 16px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.benefits_item {
+  margin-bottom: 32px;
+}
+
+.benefits_item:last-child {
+  margin-bottom: 0;
+}
+
+.benefits_icon {
+  background-color: var(--light-accent);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.benefits_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+@media only screen and (min-width: 767.98px) {
+  .benefits .title_section .cancel_margin {
+    margin-bottom: 40px;
+  }
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .benefits .title_section {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+  }
+
+  .benefits_title {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .benefits_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 704px;
+    gap: 32px;
+  }
+
+  .benefits_item:first-child {
+    grid-column: 1 / span 2;
+    justify-self: end;
+  }
+
+  .benefits_item {
+    max-width: 336px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+/* Styles for Desktop devices */
+
+@media screen and (min-width: 1280px) {
+  .decor_background {
+    position: relative;
+  }
+
+  .decor_background::after {
+    content: '';
+    position: absolute;
+
+    top: -120px;
+    right: 20px;
+
+    width: 537px;
+    height: 415px;
+
+    background-image: url('../image/background/decor_bnfs_bg@1x.png');
+
+    background-repeat: no-repeat;
+  }
+  .benefits_list {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1216px;
+    margin-top: -96px;
+  }
+
+  .benefits_item {
+    max-width: 384px;
+  }
+
+  .benefits_item:first-child {
+    grid-column: 2 / span 2;
+    justify-self: end;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .decor_background::after {
+    background-image: url('../image/background/decor_bnfs_bg@1x.png');
+  }
+}
+
+@media only screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .decor_background::after {
+    background-image: url('../image/background/decor_bnfs_bg@2x.png');
+  }
+}
+
+@media only screen and (min-width: 1280px) and (min-resolution: 3dppx) {
+  .decor_background::after {
+    background-image: url('../image/background/decor_bnfs_bg@3x.png');
+  }
+}
