@@ -7,29 +7,3 @@
   src: url(/fonts/impact.ttf);
   font-weight: 400;
 }
-
-/* Poppins */
-
-@font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url(/fonts/Poppins-Light.ttf);
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url(/fonts/Poppins-Regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url(/fonts/Poppins-Medium.ttf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url(/fonts/Poppins-SemiBold.ttf);
-  font-weight: 600;
-}

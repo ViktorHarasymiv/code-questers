@@ -20,9 +20,6 @@
 @import url('./Setup/theme.css');
 
 /* Animation */
-
-@import url('./Setup/hover.css');
-
 @import url('./Setup/switcher.css');
 
 /* Sections style */
@@ -34,4 +31,4 @@
 @import url('./FAQ.css');
 @import url('./contacts.css');
 @import url('./footer.css');
-@import url('./reviews.css')
+@import url('./reviews.css');

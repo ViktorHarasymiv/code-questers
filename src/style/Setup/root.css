@@ -4,7 +4,7 @@
   --dark: #292929;
   --light-grey: #e4e5e6;
   --hover-grey: #bbbbbb;
-  --white: #f0f0f0;
+  --white: rgb(240, 240, 240);
 
   --light-accent: #bcdfd1;
   --accet-green: #00b068;
@@ -16,7 +16,7 @@
 /* DARK THEME */
 
 :root {
-  --dark-DT: #1e2023;
+  --dark-DT: rgb(30, 32, 35);
   --charcoal-DT: #2a2d32;
   --hover-charcoal-DT: #3b3f45;
 
