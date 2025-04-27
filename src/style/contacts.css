@@ -81,7 +81,7 @@
     transform: translate(-50%);
     width: 16px;
     height: 16px;
-    background-image: url('/images/icons/verify-Form.svg');
+    background-image: url('../image/icons/verify-Form.svg');
     background-repeat: no-repeat;
 }
 .email-label.success::after { 
@@ -207,6 +207,7 @@
     font-size: 16px;
     line-height: 1.4;
 }
+
 
 @media screen and (min-width: 768px) {
  .contact-wrapper {
