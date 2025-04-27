@@ -61,5 +61,5 @@
       <!-- Arrow-button  -->
 
       <svg class="icon">
-        <use href="./../image/icons/sprite/icons.svg#icon-arrow-button"></use>
+        <use href="/image/icons/sprite/icons.svg#icon-arrow-button"></use>
       </svg>

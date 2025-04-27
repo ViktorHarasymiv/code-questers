@@ -39,6 +39,26 @@
   color: var(--accet-green);
 }
 
+/* REVIEWS */
+
+.is-dark-theme .projects-btn {
+  background: transparent;
+  color: var(--white);
+}
+
+.is-dark-theme .projects-btn:hover,
+.is-dark-theme .projects-btn:focus {
+  background: transparent;
+}
+
+.is-dark-theme .projects-item-link {
+  background: var(--charcoal-DT);
+}
+
+.is-dark-theme .projects-item-link:hover {
+  background: var(--hover-charcoal-DT);
+}
+
 /* HEADER */
 
 .is-dark-theme .header-mobile-menu-open,
@@ -73,7 +93,7 @@
 }
 
 .is-dark-theme .sticky {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(30, 32, 35, 0.8);
 }
 
 @media screen and (max-width: 420px) {
@@ -92,7 +112,6 @@
   color: var(--white) !important;
 }
 
-
 /* FAQ */
 
 .is-dark-theme .ac.is-active {
@@ -109,4 +128,18 @@
 
 .is-dark-theme .ac .ac-trigger::after {
   filter: hue-rotate(180deg) saturate(2) brightness(5);
+}
+
+/* REVIEWS */
+
+.is-dark-theme li.swiper-slide {
+  background-color: var(--charcoal-DT);
+}
+.is-dark-theme .swiper-button-prev,
+.is-dark-theme .swiper-button-next {
+  border-color: var(--white) !important;
+}
+.is-dark-theme .swiper-button-prev:after,
+.is-dark-theme .swiper-button-next:after {
+  filter: hue-rotate(180deg) saturate(1) brightness(50);
 }
