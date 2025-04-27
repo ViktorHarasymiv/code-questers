@@ -78,9 +78,6 @@ li.swiper-slide {
 .swiper-button-prev,
 .swiper-button-next {
   box-sizing: border-box !important;
-  position: absolute;
-
-  display: block;
 
   top: auto !important;
   bottom: 0 !important;
