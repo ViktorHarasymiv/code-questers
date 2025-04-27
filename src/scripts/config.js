@@ -32,13 +32,21 @@ window.addEventListener('resize', () => {
   setInitialStyles();
 });
 
-// TO TOP BUTTON
+// TO TOP BUTTON & HEADER
 
 const go_top_button = document.querySelector('.footer__to-top-box');
+const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
+  if (scrollY >= 0) header.classList.remove('scrolling');
+  if (scrollY >= 200) header.classList.add('scrolling');
+
   if (scrollY >= 700) {
+    header.classList.add('sticky');
     go_top_button.classList.add('active');
-  } else go_top_button.classList.remove('active');
+  } else {
+    go_top_button.classList.remove('active');
+    header.classList.remove('sticky');
+  }
 });

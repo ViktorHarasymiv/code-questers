@@ -31,5 +31,11 @@
 <symbol id="icon-arrow-button" viewBox="0 0 32 32">
 <path fill="none" stroke="#00b068" style="stroke: var(--color1, #00b068)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M3.111 28.889l25.778-25.778M28.889 3.111h-24M28.889 3.111v24"></path>
 </symbol>
+    <symbol id="burger-btn" viewBox="0 0 32 32">
+      <path d="M5.334 23.027v-1.333h21.333v1.333H5.334zm0-6.36v-1.333h21.333v1.333H5.334zm0-6.36V8.974h21.333v1.333H5.334z"/>
+    </symbol>
+    <symbol id="close-btn" viewBox="0 0 32 32">
+<path stroke-width="2.2857" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M22.666 9.333l-13.333 13.333M9.333 9.333l13.333 13.333"></path>
+</symbol>
 </defs>
 </svg>
