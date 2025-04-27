@@ -39,6 +39,26 @@
   color: var(--accet-green);
 }
 
+/* REVIEWS */
+
+.is-dark-theme .projects-btn {
+  background: transparent;
+  color: var(--white);
+}
+
+.is-dark-theme .projects-btn:hover,
+.is-dark-theme .projects-btn:focus {
+  background: transparent;
+}
+
+.is-dark-theme .projects-item-link {
+  background: var(--charcoal-DT);
+}
+
+.is-dark-theme .projects-item-link:hover {
+  background: var(--hover-charcoal-DT);
+}
+
 /* HEADER */
 
 .is-dark-theme .header-mobile-menu-open,
