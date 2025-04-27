@@ -75,13 +75,13 @@
   text-transform: uppercase;
   border: none;
   border-radius: 0;
-  border-bottom: 2px solid var(--accet-green-DT);
+  border-bottom: 2px solid var(--accet-green);
 
   transition: var(--T-D);
 }
 
 .projects-btn:hover {
-  color: var(--accet-green-DT);
+  color: var(--accet-green);
   background-color: transparent;
 }
 
