@@ -66,10 +66,14 @@
 
 .projects-btn {
   display: block;
+
+  padding: 12px 24px;
   margin: 0 auto;
+
   width: 100%;
-  height: auto;
-  max-width: 110px;
+  height: 56px;
+
+  width: auto;
 
   font-family: var(--poppins-font);
   font-weight: var(--regular);
@@ -77,16 +81,58 @@
   text-transform: uppercase;
   border: none;
   border-radius: 0;
-  border-bottom: 2px solid var(--accet-green);
 
   background-color: transparent !important;
 
   transition: var(--T-D);
 }
 
-.projects-btn:hover {
+.text_hover-animation {
+  position: relative;
+
+  width: auto;
+
+  font-size: 20px;
+}
+
+.text_hover-animation::after {
+  content: '';
+
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+
+  width: 100%;
+
+  height: 2px;
+  background-color: var(--accet-green);
+}
+
+.projects-btn:hover .text_hover-animation::after {
   color: var(--accet-green);
   background-color: transparent;
+
+  animation-name: pulseBorder;
+  animation-duration: 2s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulseBorder {
+  0% {
+    width: 30%;
+    background-color: var(--accet-green);
+  }
+  50% {
+    width: 100%;
+    background-color: transparent;
+  }
+  100% {
+    width: 30%;
+    background-color: var(--accet-green);
+  }
 }
 
 .visible {

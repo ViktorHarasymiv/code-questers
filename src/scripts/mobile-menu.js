@@ -30,14 +30,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
 menuLink.forEach(link => {
   link.addEventListener('click', e => {
     body.classList.remove('no-scroll');
 
     e.preventDefault(); // Забороняємо стандартну поведінку браузера
+
     const targetId = link.getAttribute('href').substring(1); // Отримуємо ID цільового елемента
     const targetElement = document.getElementById(targetId);
 
+    if (!targetElement) {
+      menuContainer.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+    }
     if (targetElement) {
       // Плавний скрол до секції
       targetElement.scrollIntoView({ behavior: 'smooth' });

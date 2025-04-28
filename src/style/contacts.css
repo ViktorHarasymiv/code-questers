@@ -1,4 +1,7 @@
 /* CONTACTS */
+.contact {
+  position: relative;
+}
 .contact_wrapper {
   max-height: 288px;
   height: 100%;
@@ -73,7 +76,7 @@
   content: '';
 
   top: 50%;
-  right: 0;
+  right: 18px;
 
   transform: translateY(-50%);
 
@@ -89,8 +92,10 @@
 }
 
 .mail_input {
+  max-width: 90%;
+  width: 100%;
   position: relative;
-  padding: 12px 16px;
+  padding: 12px 44px 12px 16px;
 
   outline: none;
 
@@ -116,6 +121,9 @@
   padding: 16px;
   min-height: 128px;
   resize: none;
+}
+.textarea_input::-webkit-scrollbar {
+  display: none;
 }
 
 .contact_input::placeholder {
@@ -187,6 +195,11 @@
   .info_panel {
     flex-direction: row;
   }
+
+  .mail_input,
+  .textarea_input {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -199,5 +212,33 @@
   }
   .width_setup {
     max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact .decor_background {
+    position: relative;
+  }
+
+  .contact .decor_background::after {
+    content: '';
+    position: absolute;
+
+    top: -120px;
+    right: 20px;
+
+    width: 336px;
+    height: 260px;
+
+    background-image: url('../image/background/decor_bnfs_bg@1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact .decor_background::after {
+    width: 537px;
+    height: 415px;
   }
 }

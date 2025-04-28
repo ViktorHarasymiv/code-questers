@@ -18,6 +18,9 @@
 }
 
 .sticky {
+  max-width: 1280px;
+  width: 100%;
+
   margin: auto;
   z-index: 999;
   position: sticky;
@@ -32,16 +35,6 @@
   backdrop-filter: blur(4px);
 
   border-radius: 25px;
-
-  width: 80vw;
-}
-
-@media screen and (max-width: 520.98px) {
-  .sticky {
-    top: 0;
-    border-radius: 0;
-    width: 100%;
-  }
 }
 
 .header-logo {
@@ -52,6 +45,13 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 20px 0;
+}
+
+.header-logo:hover {
+  transform: scale(1.02);
+  color: inherit;
+
+  text-shadow: 0.5px 0.5px var(--dark-DT);
 }
 
 .header-mobile-logo {
@@ -178,32 +178,42 @@
 
 .header-mobile-menu-container {
   position: fixed;
+
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
   background-color: #f0f0f0;
   display: flex;
-  /* display: none; */
+
   justify-content: center;
   align-items: center;
+
   z-index: 1000;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%) scaleX(0);
+  transition: transform 0.6s ease-in-out;
 }
 
 .mob-menu-top-bottom {
   display: flex;
   flex-direction: column;
-  gap: 276px;
+  justify-content: center;
   height: 100%;
+}
+
+.header-nav-menu-wrap {
+  display: flex;
+  align-items: center;
+  align-self: center;
+
+  flex-grow: 1;
 }
 
 /* Відображаємо модалку */
 
 .header-mobile-menu-container.active {
-  display: flex;
-  transform: translateX(0);
+  transform: translateX(0) scaleX(1);
 }
 
 .header-mobile-logo {
@@ -317,8 +327,6 @@
 
 body.no-scroll {
   overflow: hidden;
-  position: fixed;
-  width: 100%;
 }
 
 .switch-mobile {
@@ -333,12 +341,31 @@ body.no-scroll {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media screen and (max-width: 935px) {
+@media screen and (max-width: 1280px) {
+  .sticky {
+    max-width: 768px;
+  }
   .sticky .header-navigation {
     display: none;
   }
 
   .sticky .header-mobile-menu-open {
     display: block;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .sticky {
+    max-width: 360px;
+  }
+}
+
+@media screen and (max-width: 520.98px) {
+  .sticky {
+    max-width: 100%;
+    width: 100%;
+
+    top: 0;
+    border-radius: 0;
   }
 }
