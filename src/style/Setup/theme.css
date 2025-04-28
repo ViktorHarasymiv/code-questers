@@ -113,22 +113,22 @@
 }
 /* TECH_SKILLS */
 .is-dark-theme .marquee-container {
-  background: var(--dark-accet-DT);
+  background: var(--dark-accet-DT) !important;
 }
 .is-dark-theme .marquee-container.rotated {
-  background: var(--charcoal-DT);
+  background: var(--charcoal-DT) !important;
 }
 .is-dark-theme .marquee-item {
-  color: var(--white);
+  color: var(--white) !important;
 }
 .is-dark-theme .marquee-container.reverse .marquee-item {
-  color: var(--accet-green);
+  color: var(--accet-green) !important;
 }
 .is-dark-theme .marquee-item:before {
-  background-color: var(--accet-green-DT);
+  background-color: var(--accet-green-DT) !important;
 }
 .is-dark-theme .marquee-container.reverse .marquee-item:before {
-  background-color: var(--white);
+  background-color: var(--white) !important;
 }
 
 /* FAQ */
