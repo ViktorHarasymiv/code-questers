@@ -1,6 +1,3 @@
-.about-pic {
-  margin-bottom: 40px;
-}
 .bio {
   margin-bottom: 32px;
   margin-top: 40px;
@@ -58,7 +55,4 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-content::after {
-    background-image: url('/image/background/decor_about.png');
-  }
 }
