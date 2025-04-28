@@ -1,50 +1,103 @@
-import { requestsPost } from './request-post';
+import { requestsPost } from './request-post.js';
 
-const FORM = document.querySelector('.work-contact');
-const EMAIL = document.querySelector('.email-input');
-const LABEL = document.querySelector('.email-label');
+const FORM = document.querySelector('.contact_form');
+const EMAIL = document.querySelector('.mail_input');
+const LABEL = document.querySelector('.email_label');
 
+/* ERROR */
 
-function validateEmail(email) {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
+const errorContext = `
+<span id='error-context' class='errorText'>Invalid name, try again</span>
+`;
+
+let error = false;
+
+function getError(existingErrorElement) {
+  if (error) {
+    if (
+      !existingErrorElement ||
+      !existingErrorElement.classList.contains('errorText')
+    ) {
+      EMAIL.insertAdjacentHTML('afterend', errorContext);
+    }
+  } else if (
+    existingErrorElement &&
+    existingErrorElement.classList.contains('errorText')
+  ) {
+    existingErrorElement.remove();
+  }
 }
 
-EMAIL.addEventListener('input', () => {
-    //const email = FORM.elements.email.value;//
-    const value = EMAIL.value.trim();
+/* VALIDATE INPUT */
 
-    if (validateEmail(value)) {
-        EMAIL.style.color = 'black';
-        EMAIL.classList.remove('error');
-        EMAIL.classList.add('done');
-        LABEL.classList.add('success');
+function validateEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
+
+/* INPUT */
+
+EMAIL.addEventListener('input', () => {
+  const existingErrorElement = EMAIL.nextElementSibling;
+
+  const email = FORM.elements.email.value;
+
+  if (validateEmail(email) == false) {
+    error = true;
+
+    EMAIL.classList.add('error');
+    getError(existingErrorElement);
+
+    EMAIL.classList.remove('done');
+    LABEL.classList.remove('succses');
   } else {
-        EMAIL.style.color = 'red';
-        EMAIL.classList.add('error');
-        EMAIL.classList.remove('done');
-        LABEL.classList.remove('success');
+    error = false;
+
+    EMAIL.classList.add('done');
+    LABEL.classList.add('succses');
+
+    EMAIL.classList.remove('error');
+    getError(existingErrorElement);
   }
 });
 
+/* FOCUS */
+
+EMAIL.addEventListener('focus', () => {
+  const existingErrorElement = EMAIL.nextElementSibling;
+  if (error == true) {
+    EMAIL.classList.add('error');
+    getError(existingErrorElement);
+  }
+});
+
+/* BLUR */
+
 EMAIL.addEventListener('blur', () => {
+  const existingErrorElement = EMAIL.nextElementSibling;
   EMAIL.classList.remove('done');
   EMAIL.classList.remove('error');
-  EMAIL.style.color = 'black';
-  ICON.innerHTML = '';
-  ICON.style.display = 'none';
-  LABEL.classList.remove('success');
+  LABEL.classList.remove('succses');
+
+  if (
+    existingErrorElement &&
+    existingErrorElement.classList.contains('errorText')
+  ) {
+    existingErrorElement.remove();
+  }
 });
+
+/* SUBMIT */
 
 FORM.addEventListener('submit', async event => {
   event.preventDefault();
+
   const DATA = {
     email: FORM.elements.email.value,
-    comment: FORM.elements.textarea.value.trim(),
+    comment: FORM.elements.message.value,
   };
+
   try {
     const result = await requestsPost(DATA, FORM);
-  } catch (error) {
-    console.error('Помилка при надсиланні форми:', error);
-  }
+  } catch (error) {}
 });

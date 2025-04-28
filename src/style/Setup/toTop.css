@@ -37,6 +37,10 @@
   border-radius: 50px;
 }
 
+.button__to-top:hover {
+  transform: scale(1.05);
+}
+
 .footer__to-top-box > span {
   font-size: 10px;
   font-weight: 300;

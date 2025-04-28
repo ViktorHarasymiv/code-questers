@@ -28,15 +28,15 @@
 }
 
 .is-dark-theme .button__to-top {
-  border-color: var(--accet-green);
+  border-color: var(--white);
 }
 
 .is-dark-theme .footer--to_top_ico {
-  fill: var(--accet-green) !important;
+  fill: var(--white) !important;
 }
 
 .is-dark-theme .footer__to-top-box > span {
-  color: var(--accet-green);
+  color: var(--white);
 }
 
 /* REVIEWS */
@@ -57,7 +57,7 @@
 }
 
 .is-dark-theme .projects-item-link:hover {
-  background: var(--hover-charcoal-DT);
+  color: var(--dark);
 }
 
 /* HEADER */
@@ -149,4 +149,20 @@
 
 .is-dark-theme .benefits_icon {
   background-color: var(--dark-accet-DT);
+}
+
+/* CONTACTS */
+
+.is-dark-theme input,
+.is-dark-theme textarea {
+  color: var(--white) !important;
+  background-color: var(--charcoal-DT) !important;
+}
+
+.is-dark-theme input::placeholder,
+.is-dark-theme textarea::placeholder {
+  color: inherit !important;
+}
+
+.contact_button {
 }
