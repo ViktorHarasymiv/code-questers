@@ -41,11 +41,16 @@
   background: #00b068;
   transform: rotate(-180deg);
   background-image: url('/image/icons/dot.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  color: #00b068;
+  position: absolute;
+  left: 0;
+  top: 50%;
 }
+.li_edu,
+.li_role {
+  position: relative;
+  padding-left: 20px;
+}
+
 .about-pic {
   border-radius: 16px;
   width: 336px;
@@ -53,6 +58,15 @@
 }
 
 @media screen and (min-width: 768px) {
+  .bio {
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+  }
+  .p_bio {
+    font-size: 16px;
+  }
+
   .decor_background {
     position: relative;
   }
@@ -81,11 +95,6 @@
   .role-block {
     flex: 1 1 50%;
   }
-
-  .education_list,
-  .role_list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-  }
+}
+@media screen and (max-width: 1280px) {
 }
