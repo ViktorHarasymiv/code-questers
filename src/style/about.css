@@ -49,3 +49,16 @@
   vertical-align: middle;
   color: #00b068;
 }
+.about-pic {
+  border-radius: 16px;
+  width: 336px;
+  height: 392px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: url('path_to_image');
+}
+
+@media screen and (min-width: 768px) {
+  .about-content::after {
+    background-image: url('/image/background/decor_about.png');
+  }
+}
