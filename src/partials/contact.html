@@ -1,5 +1,5 @@
 <section id="contact" class="contact section">
-  <div class="container">
+  <div class="container decor_background">
     <h2 class="title_section">
       <span>Let's</span>
       <span class="accent">work</span>
@@ -11,14 +11,10 @@
           Contact me to transform your ideas into exceptional solutions.
         </p>
         <div class="info_panel">
-          <a
-            class="contact_tell info"
-            href="tel:+38 090 456 78 90"
-            target="_blank"
-          >
+          <a class="contact_tell info" href="tel:+38 090 456 78 90">
             <!-- phone  -->
             <svg class="icon">
-              <use href="./../image/icons/sprite/icons.svg#icon-phone"></use>
+              <use href="/image/icons/sprite/icons.svg#icon-phone"></use>
             </svg>
             <span> +38 090 456 78 90 </span></a
           >
@@ -29,7 +25,7 @@
           >
             <!-- mail  -->
             <svg class="icon">
-              <use href="./../image/icons/sprite/icons.svg#icon-mail"></use>
+              <use href="/image/icons/sprite/icons.svg#icon-mail"></use>
             </svg>
             <span> lloydjefferson@gmail.com </span>
           </a>
@@ -40,7 +36,7 @@
           >
             <!-- location  -->
             <svg class="icon">
-              <use href="./../image/icons/sprite/icons.svg#icon-location"></use>
+              <use href="/image/icons/sprite/icons.svg#icon-location"></use>
             </svg>
             <span>USA, New York</span></a
           >
@@ -50,6 +46,7 @@
         <form class="contact_form">
           <label for="email" class="email_label">
             <input
+              id="email"
               class="contact_input mail_input"
               type="email"
               name="email"
@@ -61,8 +58,9 @@
           </label>
           <label for="message" class="message">
             <textarea
+              id="message"
               class="contact_input textarea_input"
-              type="textarea"
+              type="text"
               name="message"
               placeholder="Message"
               maxlength="530"

@@ -90,7 +90,7 @@
     height: 415px;
 
     background-image: url('../image/background/decor_bnfs_bg@1x.png');
-
+    background-size: contain;
     background-repeat: no-repeat;
   }
   .benefits_list {

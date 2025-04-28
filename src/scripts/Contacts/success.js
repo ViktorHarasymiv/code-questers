@@ -25,8 +25,10 @@ export const Modal = result => {
 
   close.addEventListener('click', () => {
     overlay.remove();
+    page.classList.remove('lock');
   });
   overlay.addEventListener('click', () => {
     overlay.remove();
+    page.classList.remove('lock');
   });
 };

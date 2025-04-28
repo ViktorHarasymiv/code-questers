@@ -29,3 +29,13 @@ main {
   width: 24px;
   height: 13px;
 }
+
+#hero,
+#about,
+#projects,
+#benefits,
+#FAQ,
+#reviews,
+#contact {
+  scroll-margin-top: 40px;
+}

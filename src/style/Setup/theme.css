@@ -39,12 +39,11 @@
   color: var(--white);
 }
 
-/* REVIEWS */
+/* PROJECTS */
 
 .is-dark-theme .projects-btn {
   background: transparent;
   color: var(--white);
-  border-bottom: 2px solid var(--accet-green-DT);
 }
 
 .is-dark-theme .projects-btn:hover,
@@ -61,6 +60,13 @@
 }
 
 /* HEADER */
+
+.is-dark-theme .header-logo:hover {
+  transform: scale(1.02);
+  color: inherit;
+
+  text-shadow: 0.5px 0.5px var(--white);
+}
 
 .is-dark-theme .header-mobile-menu-open,
 .is-dark-theme .header-mobile-menu-close,
