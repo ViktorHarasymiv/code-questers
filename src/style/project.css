@@ -83,6 +83,7 @@
   border-radius: 0;
 
   background-color: transparent !important;
+  color: inherit;
 
   transition: var(--T-D);
 }
