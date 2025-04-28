@@ -8,7 +8,7 @@
     <script type="module" crossorigin src="/code-questers/index.js"></script>
     <link rel="modulepreload" crossorigin href="/code-questers/assets/vendor-Bv9soubo.js">
     <link rel="stylesheet" crossorigin href="/code-questers/assets/vendor-D3nl6WF4.css">
-    <link rel="stylesheet" crossorigin href="/code-questers/assets/index-ClscSsWJ.css">
+    <link rel="stylesheet" crossorigin href="/code-questers/assets/index-p0T6HZNm.css">
   </head>
   <body id="to_top-scroll">
     <!-- preloader  
@@ -58,7 +58,7 @@
         aria-label="Open menu"
       >
         <svg class="burger-btn-menu" width="32" height="32">
-          <use href="/code-questers/assets/icons-Fu0Lw4oL.svg#burger-btn"></use>
+          <use href="../image/icons/sprite/icons.svg#burger-btn"></use>
         </svg>
       </button>
     </div>
@@ -90,7 +90,7 @@
           aria-label="Close menu"
         >
           <svg width="32" height="32" class="menu-close-icon">
-            <use href="/code-questers/assets/icons-Fu0Lw4oL.svg#close-btn"></use>
+            <use href="../image/icons/sprite/icons.svg#close-btn"></use>
           </svg>
         </button>
       </div>
@@ -706,55 +706,77 @@
       <section id="contact" class="contact section">
   <div class="container">
     <h2 class="title_section">
-      <span>LET'S</span>
-      <span class="accent">WORK</span>
-      <span class="accent text_width-config">TOGETHER</span>
+      <span>Let's</span>
+      <span class="accent">work</span>
+      <span class="accent text_width-config">together</span>
     </h2>
-    <div class="contact-content">
-      <div class="contact-wrapper">
-        <p class="contact-message">
-        Contact me to transform your ideas into exceptional solutions.
+    <div class="contact_wrapper">
+      <div class="location_wrapper">
+        <p class="caption width_setup">
+          Contact me to transform your ideas into exceptional solutions.
         </p>
-        <ul class="contact-list">     
-          <li class="contact-item">
-            <div class="contact-list-item">
-              <svg class="icon">
-                <use href="./../image/icons/sprite/icons.svg#icon-phone"></use>
-              </svg>
-              <a class="contact-link" href="tel:+380904567890" target="_blank">+38 090 456 78 90</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="contact-list-item">
-              <svg class="icon">
-                <use href="./../image/icons/sprite/icons.svg#icon-mail"></use>
-              </svg>
-              <a class="contact-link" href="mailto:lloydjefferson@gmail.com" target="_blank">lloydjefferson@gmail.com</a>
-          </li>
-          <li class="contact-item">
-            <div class="contact-list-item">
-              <svg class="icon">
-                <use href="./../image/icons/sprite/icons.svg#icon-location"></use>
-              </svg>
-              <a class="contact-link" href="https://www.google.com/maps/@40.6970238,-74.1446556,11z?entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">USA, New York</a>
-            </div>
-          </li>
-        </ul>
+        <div class="info_panel">
+          <a
+            class="contact_tell info"
+            href="tel:+38 090 456 78 90"
+            target="_blank"
+          >
+            <!-- phone  -->
+            <svg class="icon">
+              <use href="./../image/icons/sprite/icons.svg#icon-phone"></use>
+            </svg>
+            <span> +38 090 456 78 90 </span></a
+          >
+          <a
+            class="contact_mail info"
+            href="mailto:lloydjefferson@gmail.com"
+            target="_blank"
+          >
+            <!-- mail  -->
+            <svg class="icon">
+              <use href="./../image/icons/sprite/icons.svg#icon-mail"></use>
+            </svg>
+            <span> lloydjefferson@gmail.com </span>
+          </a>
+          <a
+            class="contact_location info"
+            href="https://www.google.com/maps/@40.6970238,-74.1446556,11z?entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+          >
+            <!-- location  -->
+            <svg class="icon">
+              <use href="./../image/icons/sprite/icons.svg#icon-location"></use>
+            </svg>
+            <span>USA, New York</span></a
+          >
+        </div>
       </div>
-      <div class="contact-form-box">
-        <form class="work-contact">
-          <label for="form-email" class="email-label">
-            <input type="email" name="email" class="email-input mail-inp" id="form-email"
-              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required placeholder="Your email*" />
+      <div class="form_wrapper">
+        <form class="contact_form">
+          <label for="email" class="email_label">
+            <input
+              class="contact_input mail_input"
+              type="email"
+              name="email"
+              placeholder="Your email*"
+              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              maxlength="35"
+              required
+            />
           </label>
-          <label for="message">
-            <textarea id="message" name="textarea" class="text-message" placeholder="Message" maxlength="530"></textarea>
+          <label for="message" class="message">
+            <textarea
+              class="contact_input textarea_input"
+              type="textarea"
+              name="message"
+              placeholder="Message"
+              maxlength="530"
+            ></textarea>
           </label>
-          <button class="btn-send-message" type="submit">SEND MESSAGE</button>
+          <button class="contact_button" type="submit">SEND MESSAGE</button>
         </form>
       </div>
     </div>
-    
   </div>
 </section>
 
