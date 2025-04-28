@@ -32,7 +32,15 @@
   flex-direction: column;
   gap: 12px;
 }
-.icon {
+.li_edu::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  background-image: url('/src/image/icons/dot.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
   color: #00b068;
-  fill: currentColor;
 }
