@@ -53,6 +53,24 @@
 }
 
 @media screen and (min-width: 768px) {
+  .decor_background {
+    position: relative;
+  }
+
+  .decor_background::after {
+    content: '';
+    position: absolute;
+
+    top: -120px;
+    right: 20px;
+
+    width: 537px;
+    height: 415px;
+
+    background-image: url('/image/background/decor_about.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
   .education-role {
     display: flex;
     flex-direction: row;
@@ -61,7 +79,7 @@
 
   .education-block,
   .role-block {
-    flex: 1 1 50%; /* кожен займає половину простору */
+    flex: 1 1 50%;
   }
 
   .education_list,
