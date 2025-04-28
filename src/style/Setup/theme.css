@@ -111,6 +111,25 @@
 .is-dark-theme .button_text {
   color: var(--white) !important;
 }
+/* TECH_SKILLS */
+.is-dark-theme .marquee-container {
+  background: var(--dark-accet-DT);
+}
+.is-dark-theme .marquee-container.rotated {
+  background: var(--charcoal-DT);
+}
+.is-dark-theme .marquee-item {
+  color: var(--white);
+}
+.is-dark-theme .marquee-container.reverse .marquee-item {
+  color: var(--accet-green);
+}
+.is-dark-theme .marquee-item:before {
+  background-color: var(--accet-green-DT);
+}
+.is-dark-theme .marquee-container.reverse .marquee-item:before {
+  background-color: var(--white);
+}
 
 /* FAQ */
 
