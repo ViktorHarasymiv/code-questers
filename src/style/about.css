@@ -1,100 +1,203 @@
-.bio {
-  margin-bottom: 32px;
-  margin-top: 40px;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #292929;
+.about_content--wrapper {
+  min-height: 775px;
 }
-.p_bio {
-  margin-bottom: 24px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: #292929;
+
+.about .title_section {
+  margin-bottom: 40px;
 }
-.education_list,
-.role_list {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: #292929;
+
+.content_biography {
+  margin-bottom: 80px;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+}
+
+.photo--tile {
+  flex: 1 1 50%;
+}
+
+.photo--tile {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.content_photo {
+  flex-grow: 0;
+}
+
+.biography_tile {
+  max-width: 488px;
+  margin-left: 136px;
+
+  display: flex;
   flex-direction: column;
-  gap: 12px;
+
+  justify-content: end;
+  align-items: end;
+
+  flex: 1 1 50%;
 }
 
-.li_edu::before,
-.li_role::before {
-  content: '';
-  display: inline-block;
-  border-radius: 1px;
-  width: 4px;
-  height: 4px;
-  margin-right: 8px;
-  background: #00b068;
-  transform: rotate(-180deg);
-  background-image: url('/image/icons/dot.svg');
-  position: absolute;
-  left: 0;
-  top: 50%;
-}
-.li_edu,
-.li_role {
-  position: relative;
-  padding-left: 20px;
+.biography_tile .content_title {
+  align-self: stretch;
 }
 
-.about-pic {
-  border-radius: 16px;
-  width: 336px;
-  height: 392px;
+.content_title {
+  display: block;
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 133%;
+  letter-spacing: 0.01em;
 }
 
-@media screen and (min-width: 768px) {
-  .bio {
-    font-size: 36px;
-    line-height: 1.33333;
-    letter-spacing: 0.01em;
-  }
-  .p_bio {
-    font-size: 16px;
-  }
+.paragraph_tile {
+  max-width: 480px;
 
-  .decor_background {
+  text-wrap: balance;
+}
+
+.paragraph {
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.paragraph_first {
+  margin-bottom: 24px;
+}
+
+.about_decor--background {
+  align-self: end;
+
+  transform: translateY(40px);
+}
+
+@media screen and (max-width: 1280px) {
+  .biography_tile {
     position: relative;
+    margin-left: 32px;
   }
-
-  .decor_background::after {
-    content: '';
+  .paragraph_tile {
+    padding-bottom: 80px;
+  }
+  .about_decor--background {
     position: absolute;
 
-    top: -120px;
-    right: 20px;
-
-    width: 537px;
-    height: 415px;
-
-    background-image: url('/image/background/decor_about.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .education-role {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
+    left: -20px;
+    bottom: -145px;
   }
 
-  .education-block,
-  .role-block {
-    flex: 1 1 50%;
+  .right {
+    margin-left: 0px;
+    align-self: flex-start;
   }
 }
+
+@media screen and (max-width: 767.98px) {
+  .content_biography {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .biography_tile {
+    margin-left: 0px;
+  }
+
+  .paragraph_tile {
+    padding-bottom: 0px;
+  }
+
+  .photo--tile {
+    margin-bottom: 40px;
+  }
+
+  .photo--tile,
+  .biography_tile {
+    flex: 1 1 100%;
+  }
+
+  .about_decor--background {
+    display: none;
+  }
+}
+
+/* Experience */
+
+.content_experience {
+  display: flex;
+}
+
+.education_tile {
+  display: flex;
+  flex-direction: column;
+
+  align-items: end;
+
+  flex: 0 0 50%;
+}
+
+.role_tile {
+  margin-left: 136px;
+  flex: 1 1 50%;
+}
+
+.list {
+  max-width: 390px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list li {
+  padding-left: 24px;
+
+  position: relative;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.list li::before {
+  content: '';
+
+  position: absolute;
+
+  top: 9px;
+  left: 4px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: var(--accet-green);
+  border-radius: 1px;
+}
+
+.right {
+  margin-left: 20px;
+  align-self: center;
+}
+
 @media screen and (max-width: 1280px) {
+  .right {
+    margin-left: 0px;
+    align-self: flex-start;
+  }
+
+  .role_tile {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .content_experience {
+    flex-wrap: wrap;
+  }
+  .education_tile {
+    margin-bottom: 40px;
+  }
+  .education_tile,
+  .role_tile {
+    flex: 1 1 100%;
+  }
 }
