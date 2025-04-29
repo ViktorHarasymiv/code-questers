@@ -3,17 +3,18 @@
   flex-direction: column;
   gap: 0px;
   margin: 0;
-  margin-bottom: 80px;
 }
 
 .marquee-container {
   width: 100%;
   z-index: 10;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+
   background: var(--light-accent);
-  padding: 24px 0;
+
   margin: 0 auto;
+
   transition: color 0.25s ease-in-out;
 }
 
@@ -24,8 +25,9 @@
 }
 
 .marquee-content {
+  max-height: 128px;
+  height: 100%;
   display: flex;
-  width: fit-content;
 }
 
 .marquee-list {
@@ -103,18 +105,13 @@
   .marquee-item {
     font-size: 36px;
   }
-  .marquee-wrapper {
-    margin-bottom: 125px;
-  }
 }
+
 @media screen and (min-width: 1280px) {
   .marquee-list {
     padding: 40px 0px;
   }
   .marquee-item {
     font-size: 40px;
-  }
-  .marquee-wrapper {
-    margin-bottom: 165px;
   }
 }

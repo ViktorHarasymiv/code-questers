@@ -1,3 +1,7 @@
+.footer {
+  padding-block: 40px 24px;
+  border-top: 1px solid var(--light-grey);
+}
 .footer-logo {
   display: flex;
   font-family: var(--impact-font);
@@ -15,7 +19,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
   margin-bottom: 40px;
 }
 .copyright-footer {
@@ -24,9 +27,6 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  white-space: pre-line;
-  margin: -24px 0 -24px 0;
-  transition: color 0.25s ease-in-out;
 }
 
 .footer-nav-list {
@@ -40,7 +40,6 @@
   .copyright-footer {
     text-align: right;
     white-space: nowrap;
-    margin: 0 0 24px 0;
   }
   .footer-nav-list {
     display: flex;
