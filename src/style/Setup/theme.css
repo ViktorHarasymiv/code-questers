@@ -191,5 +191,10 @@
   color: inherit !important;
 }
 
-.contact_button {
+.is-dark-theme .success_modal {
+  background-color: var(--charcoal-DT);
+}
+
+.is-dark-theme .close_ico {
+  filter: none;
 }

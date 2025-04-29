@@ -142,7 +142,7 @@
   flex: 1 1 50%;
 }
 
-.list {
+.about-list {
   max-width: 390px;
 
   display: flex;
@@ -150,7 +150,7 @@
   gap: 16px;
 }
 
-.list li {
+.about-list li {
   padding-left: 24px;
 
   position: relative;
@@ -158,7 +158,7 @@
   letter-spacing: 0.03em;
 }
 
-.list li::before {
+.about-list li::before {
   content: '';
 
   position: absolute;

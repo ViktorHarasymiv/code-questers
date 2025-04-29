@@ -31,4 +31,11 @@ export const Modal = result => {
     overlay.remove();
     page.classList.remove('lock');
   });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      overlay.remove();
+      page.classList.remove('lock');
+    }
+  });
 };
