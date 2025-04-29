@@ -192,11 +192,11 @@
   align-items: center;
 
   z-index: 1000;
-  opacity: 0.6;
+  opacity: 0;
   transform: translateX(100%) scaleX(0);
   transition: transform 0.6s ease-in-out;
 
-  background-color: var(--dark-DT);
+  background-color: var(--light-grey);
 }
 
 .mob-menu-top-bottom {
