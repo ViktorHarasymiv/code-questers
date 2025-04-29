@@ -1,17 +1,16 @@
 .overlay {
   z-index: 9991;
   position: fixed;
+
   width: 100%;
   height: 100%;
 
   background-color: rgba(30, 32, 35, 0.8);
-
-  overflow-y: scroll;
 }
 
 .success_modal {
   z-index: 9991;
-  width: clamp(320px, 45vw, 492px);
+  width: clamp(280px, 45vw, 492px);
   max-height: 280px;
   height: 100%;
 
@@ -61,6 +60,12 @@
   height: 24px !important;
 
   background-color: transparent !important;
+}
+
+@media screen and (max-width: 767.98px) {
+  .close_button {
+    right: 10px;
+  }
 }
 
 .close_ico {
