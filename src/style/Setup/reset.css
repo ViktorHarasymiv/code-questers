@@ -69,6 +69,17 @@ img {
   height: auto;
 }
 
+input,
+textarea {
+  color: var(--dark) !important;
+  background-color: var(--light-grey) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: inherit !important;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

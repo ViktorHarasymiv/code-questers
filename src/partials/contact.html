@@ -1,9 +1,74 @@
 <section id="contact" class="contact section">
-  <div class="container">
+  <div class="container decor_background">
     <h2 class="title_section">
       <span>Let's</span>
       <span class="accent">work</span>
       <span class="accent text_width-config">together</span>
     </h2>
+    <div class="contact_wrapper">
+      <div class="location_wrapper">
+        <p class="caption width_setup">
+          Contact me to transform your ideas into exceptional solutions.
+        </p>
+        <div class="info_panel">
+          <a class="contact_tell info" href="tel:+38 090 456 78 90">
+            <!-- phone  -->
+            <svg class="icon">
+              <use href="/image/icons/sprite/icons.svg#icon-phone"></use>
+            </svg>
+            <span> +38 090 456 78 90 </span></a
+          >
+          <a
+            class="contact_mail info"
+            href="mailto:lloydjefferson@gmail.com"
+            target="_blank"
+          >
+            <!-- mail  -->
+            <svg class="icon">
+              <use href="/image/icons/sprite/icons.svg#icon-mail"></use>
+            </svg>
+            <span> lloydjefferson@gmail.com </span>
+          </a>
+          <a
+            class="contact_location info"
+            href="https://www.google.com/maps/@40.6970238,-74.1446556,11z?entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+          >
+            <!-- location  -->
+            <svg class="icon">
+              <use href="/image/icons/sprite/icons.svg#icon-location"></use>
+            </svg>
+            <span>USA, New York</span></a
+          >
+        </div>
+      </div>
+      <div class="form_wrapper">
+        <form class="contact_form">
+          <label for="email" class="email_label">
+            <input
+              id="email"
+              class="contact_input mail_input"
+              type="email"
+              name="email"
+              placeholder="Your email*"
+              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              maxlength="35"
+              required
+            />
+          </label>
+          <label for="message" class="message">
+            <textarea
+              id="message"
+              class="contact_input textarea_input"
+              type="text"
+              name="message"
+              placeholder="Message"
+              maxlength="530"
+            ></textarea>
+          </label>
+          <button class="contact_button" type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
