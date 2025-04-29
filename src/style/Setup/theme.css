@@ -113,6 +113,10 @@
   text-shadow: 0.5px 0.5px var(--white);
 }
 
+.is-dark-theme .header-mobile-menu-container {
+  background-color: var(--dark-DT);
+}
+
 /* HERO */
 
 .is-dark-theme .hero_navigation {
