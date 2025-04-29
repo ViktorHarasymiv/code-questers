@@ -109,6 +109,10 @@
   }
 }
 
+.is-dark-theme .logo:hover {
+  text-shadow: 0.5px 0.5px var(--white);
+}
+
 /* HERO */
 
 .is-dark-theme .hero_navigation {
@@ -136,6 +140,14 @@
 }
 .is-dark-theme .marquee-container.reverse .marquee-item:before {
   background-color: var(--white) !important;
+}
+
+.is-dark-theme .hero_button {
+  background: var(--accet-green-DT);
+}
+
+.is-dark-theme .hero_button:hover {
+  background: var(--hover-green);
 }
 
 /* FAQ */

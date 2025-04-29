@@ -1,4 +1,5 @@
 import axios from 'axios';
+import iziToast from 'izitoast';
 
 import { Modal } from './success.js';
 
@@ -17,12 +18,24 @@ export async function requestsPost(DATA, FORM) {
   } catch (error) {
     if (error.response) {
       // Сервер повернув статус помилки
-      console.error('Помилка:', error.response.data.message);
-      alert(`Помилка: ${error.response.data.message}`);
+      iziToast.error({
+        message: `Помилка: ${error.response.data.message}`,
+        position: 'topRight',
+        closeOnClick: true,
+        color: `var(--error)`,
+        messageColor: `#fafafb`,
+        backgroundColor: '#ef4040',
+      });
     } else {
       // Помилка з'єднання з сервером
-      console.error('Помилка зʼєднання з сервером.');
-      alert('Помилка зʼєднання з сервером. Спробуйте ще раз.');
+      iziToast.error({
+        message: 'Помилка зʼєднання з сервером. Спробуйте ще раз.',
+        position: 'topRight',
+        closeOnClick: true,
+        color: `var(--error)`,
+        messageColor: `#fafafb`,
+        backgroundColor: '#ef4040',
+      });
     }
   }
 }

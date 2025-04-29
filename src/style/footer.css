@@ -31,7 +31,6 @@
 
 .footer-nav-list {
   display: flex;
-  align-items: left;
   justify-content: left;
   flex-direction: column;
   row-gap: 24px;

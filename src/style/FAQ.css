@@ -50,7 +50,7 @@
 
   flex: 1 1 50%;
 
-  transition-duration: 0 !important;
+  transition-duration: 0s !important;
 }
 
 @media screen and (max-width: 1280px) {
@@ -99,11 +99,8 @@
 .ac.is-active {
   border-radius: 16px !important;
 
-  border-bottom: none !important;
-}
-
-.is-active {
   background-color: var(--light-accent) !important;
+  border-bottom: none !important;
 }
 
 .ac-header {

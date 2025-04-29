@@ -104,9 +104,14 @@
 .hero_button {
   width: 261px;
   height: 96px;
+
+  background-color: var(--light-accent);
+
+  border-radius: 16px;
 }
 
 .transform_text {
+  height: 100%;
   pointer-events: none;
   display: inline-flex;
   justify-content: center;
