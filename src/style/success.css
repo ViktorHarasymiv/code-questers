@@ -1,13 +1,12 @@
 .overlay {
   z-index: 9991;
   position: fixed;
-
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
 
   background-color: rgba(30, 32, 35, 0.8);
+
+  overflow-y: scroll;
 }
 
 .success_modal {
@@ -28,7 +27,7 @@
 
   transform: translate(-50%, -50%);
 
-  background-color: var(--charcoal-DT);
+  background-color: var(--white);
 
   border-radius: 16px;
 
@@ -49,11 +48,7 @@
 .success_about {
   font-family: var(--poppins-font);
   font-weight: var(--light);
-  font-size: clamp(0.75rem, 0.5543rem + 0.8696vw, 1.25rem);
-  line-height: 150%;
   letter-spacing: 0.03em;
-
-  color: var(--white);
 }
 
 .close_button {
@@ -70,12 +65,12 @@
 
 .close_ico {
   cursor: pointer;
+
+  filter: invert(1);
 }
 
 .close_ico:hover {
   transform: scale(1.1);
-
-  filter: sepia(60%);
 
   transition-duration: var(--T-D);
 }

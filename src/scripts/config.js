@@ -50,3 +50,22 @@ window.addEventListener('scroll', () => {
     header.classList.remove('sticky');
   }
 });
+
+/* Keydown events */
+
+document.addEventListener('keydown', function (event) {
+  console.log(event.key);
+
+  if (event.key === 'Home') {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+  if (event.key === 'End') {
+    window.scrollTo({
+      bottom: 0,
+      behavior: 'smooth',
+    });
+  }
+});

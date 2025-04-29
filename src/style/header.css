@@ -177,6 +177,7 @@
 }
 
 .header-mobile-menu-container {
+  visibility: hidden;
   position: fixed;
 
   top: 0;
@@ -191,6 +192,7 @@
   align-items: center;
 
   z-index: 1000;
+  opacity: 0.6;
   transform: translateX(100%) scaleX(0);
   transition: transform 0.6s ease-in-out;
 }
@@ -213,6 +215,8 @@
 /* Відображаємо модалку */
 
 .header-mobile-menu-container.active {
+  visibility: visible;
+  opacity: 1;
   transform: translateX(0) scaleX(1);
 }
 
