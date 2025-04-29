@@ -125,6 +125,12 @@
   transition-duration: var(--T-D);
 }
 
+@media screen and (max-width: 360px) {
+  .transform_text {
+    transform: translateX(-120px);
+  }
+}
+
 .hero_button:hover .transform_text {
   transform: translateX(-45px);
 }
