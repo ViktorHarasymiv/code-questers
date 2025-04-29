@@ -118,6 +118,25 @@
 .is-dark-theme .button_text {
   color: var(--white) !important;
 }
+/* TECH_SKILLS */
+.is-dark-theme .marquee-container {
+  background: var(--dark-accet-DT) !important;
+}
+.is-dark-theme .marquee-container.rotated {
+  background: var(--charcoal-DT) !important;
+}
+.is-dark-theme .marquee-item {
+  color: var(--white) !important;
+}
+.is-dark-theme .marquee-container.reverse .marquee-item {
+  color: var(--accet-green) !important;
+}
+.is-dark-theme .marquee-item:before {
+  background-color: var(--accet-green-DT) !important;
+}
+.is-dark-theme .marquee-container.reverse .marquee-item:before {
+  background-color: var(--white) !important;
+}
 
 /* FAQ */
 
@@ -150,6 +169,8 @@
 .is-dark-theme .swiper-button-next:after {
   filter: hue-rotate(180deg) saturate(1) brightness(50);
 }
+
+/* FOOTER */
 
 /* BENEFITS */
 

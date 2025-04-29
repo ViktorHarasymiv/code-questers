@@ -1,0 +1,120 @@
+.marquee-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.marquee-container {
+  width: 100%;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+  background: var(--light-accent);
+  padding: 24px 0;
+  margin: 0 auto;
+  transition: color 0.25s ease-in-out;
+}
+
+.marquee-container.rotated {
+  z-index: 1;
+  background: var(--light-grey);
+  transform: skewY(2deg);
+}
+
+.marquee-content {
+  display: flex;
+  width: fit-content;
+}
+
+.marquee-list {
+  display: flex;
+  flex-shrink: 0;
+  padding: 32px 0px;
+  margin: 0;
+  list-style: none;
+  animation: scroll 20s linear infinite;
+}
+
+.marquee-item {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--medium);
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--dark);
+  display: inline-block;
+  position: relative;
+  margin-right: 56px;
+  transition: color 0.25s ease-in-out;
+}
+
+.marquee-container.reverse .marquee-item {
+  color: var(--accet-green);
+}
+
+.marquee-item:before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--accet-green-DT);
+  border-radius: 2px;
+  display: inline-block;
+  transition: color 0.25s ease-in-out;
+}
+
+.marquee-container.reverse .marquee-item:before {
+  background-color: var(--dark);
+}
+
+.marquee-container.reverse .marquee-list {
+  animation: scrollReverse 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollReverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .marquee-list {
+    padding: 36px 0px;
+    line-height: 1.333333;
+  }
+  .marquee-item {
+    font-size: 36px;
+  }
+  .marquee-wrapper {
+    margin-bottom: 125px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .marquee-list {
+    padding: 40px 0px;
+  }
+  .marquee-item {
+    font-size: 40px;
+  }
+  .marquee-wrapper {
+    margin-bottom: 165px;
+  }
+}
