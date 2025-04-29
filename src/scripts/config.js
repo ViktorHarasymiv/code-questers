@@ -54,8 +54,6 @@ window.addEventListener('scroll', () => {
 /* Keydown events */
 
 document.addEventListener('keydown', function (event) {
-  console.log(event.key);
-
   if (event.key === 'Home') {
     window.scrollTo({
       top: 0,
