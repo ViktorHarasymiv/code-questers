@@ -1,0 +1,203 @@
+.about_content--wrapper {
+  min-height: 775px;
+}
+
+.about .title_section {
+  margin-bottom: 40px;
+}
+
+.content_biography {
+  margin-bottom: 80px;
+  display: flex;
+}
+
+.photo--tile {
+  flex: 1 1 50%;
+}
+
+.photo--tile {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.content_photo {
+  flex-grow: 0;
+}
+
+.biography_tile {
+  max-width: 488px;
+  margin-left: 136px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: end;
+  align-items: end;
+
+  flex: 1 1 50%;
+}
+
+.biography_tile .content_title {
+  align-self: stretch;
+}
+
+.content_title {
+  display: block;
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 133%;
+  letter-spacing: 0.01em;
+}
+
+.paragraph_tile {
+  max-width: 480px;
+
+  text-wrap: balance;
+}
+
+.paragraph {
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.paragraph_first {
+  margin-bottom: 24px;
+}
+
+.about_decor--background {
+  align-self: end;
+
+  transform: translateY(40px);
+}
+
+@media screen and (max-width: 1280px) {
+  .biography_tile {
+    position: relative;
+    margin-left: 32px;
+  }
+  .paragraph_tile {
+    padding-bottom: 80px;
+  }
+  .about_decor--background {
+    position: absolute;
+
+    left: -20px;
+    bottom: -145px;
+  }
+
+  .right {
+    margin-left: 0px;
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .content_biography {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .biography_tile {
+    margin-left: 0px;
+  }
+
+  .paragraph_tile {
+    padding-bottom: 0px;
+  }
+
+  .photo--tile {
+    margin-bottom: 40px;
+  }
+
+  .photo--tile,
+  .biography_tile {
+    flex: 1 1 100%;
+  }
+
+  .about_decor--background {
+    display: none;
+  }
+}
+
+/* Experience */
+
+.content_experience {
+  display: flex;
+}
+
+.education_tile {
+  display: flex;
+  flex-direction: column;
+
+  align-items: end;
+
+  flex: 0 0 50%;
+}
+
+.role_tile {
+  margin-left: 136px;
+  flex: 1 1 50%;
+}
+
+.list {
+  max-width: 390px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list li {
+  padding-left: 24px;
+
+  position: relative;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.list li::before {
+  content: '';
+
+  position: absolute;
+
+  top: 9px;
+  left: 4px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: var(--accet-green);
+  border-radius: 1px;
+}
+
+.right {
+  margin-left: 20px;
+  align-self: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .right {
+    margin-left: 0px;
+    align-self: flex-start;
+  }
+
+  .role_tile {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .content_experience {
+    flex-wrap: wrap;
+  }
+  .education_tile {
+    margin-bottom: 40px;
+  }
+  .education_tile,
+  .role_tile {
+    flex: 1 1 100%;
+  }
+}
