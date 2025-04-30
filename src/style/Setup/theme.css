@@ -105,7 +105,8 @@
 
 @media screen and (max-width: 420px) {
   .is-dark-theme .sticky {
-    background-color: var(--dark-DT);
+    background-color: rgba(30, 32, 35, 0.8);
+    backdrop-filter: blur(4px);
   }
 }
 
